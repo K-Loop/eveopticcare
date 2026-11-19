@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50">
+  <defs>
+    <linearGradient id="rainbow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF00C8" />
+      <stop offset="20%" stop-color="#246BFF" />
+      <stop offset="40%" stop-color="#00D4FF" />
+      <stop offset="60%" stop-color="#55E64B" />
+      <stop offset="80%" stop-color="#FFD600" />
+      <stop offset="100%" stop-color="#F50914" />
+    </linearGradient>
+  </defs>
+  <!-- Spectacle frames -->
+  <path d="M 12 18 C 12 10, 22 8, 32 8 C 42 8, 46 13, 46 22 C 46 32, 38 38, 28 38 C 18 38, 12 30, 12 18 Z" fill="none" stroke="url(#rainbow)" stroke-width="4.5" stroke-linecap="round" />
+  <path d="M 54 22 C 54 13, 58 8, 68 8 C 78 8, 88 10, 88 18 C 88 30, 82 38, 72 38 C 62 38, 54 32, 54 22 Z" fill="none" stroke="url(#rainbow)" stroke-width="4.5" stroke-linecap="round" />
+  <!-- Bridge -->
+  <path d="M 45 16 Q 50 13 55 16" fill="none" stroke="url(#rainbow)" stroke-width="4" stroke-linecap="round" />
+  <!-- Temples wings -->
+  <line x1="3" y1="18" x2="13" y2="18" stroke="#F50914" stroke-width="3.5" stroke-linecap="round" />
+  <line x1="87" y1="18" x2="97" y2="18" stroke="#F50914" stroke-width="3.5" stroke-linecap="round" />
+</svg>

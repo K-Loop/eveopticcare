@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
-import { Search, Globe, Calendar, Menu, X, ChevronDown, Phone } from 'lucide-react';
+import { Search, Calendar, Menu, X, ChevronDown, Phone } from 'lucide-react';
 import Logo from './Logo';
 import { navLinks, storeInfo } from '../data/navigation';
 import { translations } from '../data/translations';
@@ -30,10 +30,6 @@ export default function Navbar({ lang = 'en', setLang, onOpenBookModal, onOpenSe
     setMobileMenuOpen(false);
     setProductsDropdown(false);
   }, [location.pathname]);
-
-  const toggleLanguage = () => {
-    setLang(lang === 'en' ? 'ta' : 'en');
-  };
 
   return (
     <>
@@ -192,16 +188,6 @@ export default function Navbar({ lang = 'en', setLang, onOpenBookModal, onOpenSe
               className="p-2 rounded-full text-[#A0A0A0] hover:text-white hover:bg-white/5 transition-colors cursor-pointer"
             >
               <Search className="w-4 h-4 sm:w-4.5 sm:h-4.5" />
-            </button>
-
-            {/* Language Switcher Button (English / தமிழ்) */}
-            <button
-              onClick={toggleLanguage}
-              className="flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#181818] border border-[#2a2a2a] text-xs font-medium text-[#D0D0D0] hover:text-white hover:border-[#444] transition-all cursor-pointer"
-              title="Switch Language"
-            >
-              <Globe className="w-3.5 h-3.5 text-[#00D4FF]" />
-              <span>{lang === 'en' ? 'தமிழ்' : 'English'}</span>
             </button>
 
             {/* Primary Action Button: Book Eye Test */}
